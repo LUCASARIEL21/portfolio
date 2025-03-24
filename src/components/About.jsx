@@ -27,7 +27,7 @@ const About = () => {
       <div className="flex flex-wrap justify-around items-center w-full max-w-5xl gap-10 mb-6">
         <div className="flex flex-col items-center">
           <img
-            src="/src/assets/images/dev.png"
+            src="/src/assets/dev.png"
             alt="Desenvolvedor"
             className="w-24 h-24 md:w-32 md:h-32 mb-2 animate-[bounce_3s_ease-in-out_infinite]"
           />
@@ -35,7 +35,7 @@ const About = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
-            src="/src/assets/images/support.png"
+            src="/src/assets/support.png"
             alt="Suporte Técnico"
             className="w-24 h-24 md:w-32 md:h-32 mb-2 animate-[bounce_3s_ease-in-out_infinite]"
           />
@@ -43,7 +43,7 @@ const About = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
-            src="/src/assets/images/analyst.png"
+            src="/src/assets/analyst.png"
             alt="Analista"
             className="w-24 h-24 md:w-32 md:h-32 mb-2 animate-[bounce_3s_ease-in-out_infinite]"
           />
