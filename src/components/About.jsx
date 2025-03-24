@@ -22,34 +22,6 @@ const About = () => {
       >
         Download CV
       </button>
-
-      {/* Imagens com animação mais lenta e layout responsivo */}
-      <div className="flex flex-wrap justify-around items-center w-full max-w-5xl gap-10 mb-6">
-        <div className="flex flex-col items-center">
-          <img
-            src="/src/assets/dev.png"
-            alt="Desenvolvedor"
-            className="w-24 h-24 md:w-32 md:h-32 mb-2 animate-[bounce_3s_ease-in-out_infinite]"
-          />
-          <p className="text-center">Desenvolvedor</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <img
-            src="/src/assets/support.png"
-            alt="Suporte Técnico"
-            className="w-24 h-24 md:w-32 md:h-32 mb-2 animate-[bounce_3s_ease-in-out_infinite]"
-          />
-          <p className="text-center">Suporte Técnico</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <img
-            src="/src/assets/analyst.png"
-            alt="Analista"
-            className="w-24 h-24 md:w-32 md:h-32 mb-2 animate-[bounce_3s_ease-in-out_infinite]"
-          />
-          <p className="text-center">Analista</p>
-        </div>
-      </div>
     </section>
   );
 };
