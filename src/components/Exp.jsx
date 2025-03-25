@@ -41,7 +41,7 @@ const Experience = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-3xl">
+      <div className="w-full max-w-3xl mb-12">
         <h3 className="text-2xl font-semibold mb-4 border-b-2 border-yellow-500 pb-2">Formação Acadêmica</h3>
 
         <ul className="list-disc ml-6 space-y-4 text-gray-300">
@@ -55,6 +55,19 @@ const Experience = () => {
             <br />
             <span className="text-gray-400">2019 - 2022</span>
           </li>
+        </ul>
+      </div>
+
+      <div className="w-full max-w-3xl">
+        <h3 className="text-2xl font-semibold mb-4 border-b-2 border-yellow-500 pb-2">Cursos Extracurriculares</h3>
+
+        <ul className="list-disc ml-6 space-y-2 text-gray-300">
+          <li>Scrum Foundation Professional Certificate (SFPC ™)</li>
+          <li>Kanban Foundation (KIKF ™)</li>
+          <li>HTML, CSS e JavaScript</li>
+          <li>React JS</li>
+          <li>Git e GitHub</li>
+          <li>NLW Pocket: Javascript - Full-stack Intermediário</li>
         </ul>
       </div>
     </section>
