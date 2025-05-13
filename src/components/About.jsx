@@ -17,7 +17,7 @@ const About = () => {
     >
       <div className="flex flex-col md:flex-row items-center max-w-5xl w-full gap-10">
         <img
-          src="/src/assets/foto-perfil.jpg"
+          src="/src/assets/foto-perfil.png"
           alt="Foto de Lucas Ariel"
           className="w-72 h-72 object-cover rounded-full shadow-lg"
         />
