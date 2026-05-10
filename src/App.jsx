@@ -9,7 +9,7 @@ import Experience from "./components/Exp";
 
 function App() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col text-slate-100 antialiased">
       <Header />
       <About />
       <Skills />

@@ -65,23 +65,28 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <section className="h-full bg-gray-800 text-white flex flex-col justify-center items-center px-4" id="habilidades">
-      <h2 className="text-4xl font-semibold mb-6 mt-3">Minhas Habilidades</h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-6">
-        {skillsData.map((skill, index) => (
+    <section className="py-20 bg-slate-900/80 backdrop-blur-sm text-white px-4" id="habilidades">
+      <div className="mx-auto max-w-6xl">
+        <p className="uppercase tracking-[0.2em] text-xs text-amber-300 mb-2 text-center">Stack e Ferramentas</p>
+        <h2 className="text-4xl md:text-5xl font-black mb-10 text-center">Minhas Habilidades</h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skillsData.map((skill) => (
           <div
-            key={index}
-            className="bg-gray-900 rounded-2xl shadow-xl p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300"
+            key={skill.name}
+            className="bg-slate-950/70 border border-white/10 rounded-2xl shadow-xl p-5 flex flex-col items-center hover:-translate-y-1 hover:border-amber-300/40 transition-all duration-300"
           >
             <img
               src={skill.img}
               alt={skill.name}
-              className="w-16 h-16 mb-4"
+              className="w-14 h-14 mb-4"
+              loading="lazy"
             />
-            <h3 className="text-xl font-bold mb-2">{skill.name}</h3>
-            <p className="text-sm text-gray-300 text-center">{skill.description}</p>
+            <h3 className="text-xl font-bold mb-2 text-amber-200">{skill.name}</h3>
+            <p className="text-sm text-slate-300 text-center leading-relaxed">{skill.description}</p>
           </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

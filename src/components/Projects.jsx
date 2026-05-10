@@ -4,9 +4,9 @@ import climax from "../assets/climax.png";
 import people4devs from "../assets/people-4devs.png";
 import pocketTs from "../assets/pocket-ts.png";
 import apiUsers from "../assets/api-users.png";
-import landingPageCarros from "../assets/landing-page-carros.png";
+import brookfieldSolutions from "../assets/brookfieldSolutions.png";
 import projetoVenc from "../assets/projeto-venc.png";
-import analiseXml from "../assets/analise-de-xml.png";
+import iaroffice from "../assets/iaroffice.png";
 import Onebitcode from "../assets/Onebitcode.png";
 
 const projectsData = [
@@ -41,10 +41,10 @@ const projectsData = [
     link: "https://github.com/LUCASARIEL21/api-users",
   },
   {
-    name: "landing-page-carros",
-    img: landingPageCarros,
-    description: "Site de apresentação de carros de luxo.",
-    link: "https://github.com/LUCASARIEL21/landing-page-carros",
+    name: "Brookfield Solutions",
+    img: brookfieldSolutions,
+    description: "Site da construtora Brookfield Solutions.",
+    link: "https://brookfieldsolutions.us/",
   },
   {
     name: "Projeto-Venc",
@@ -53,10 +53,10 @@ const projectsData = [
     link: "https://github.com/LUCASARIEL21/Projeto-Venc",
   },
   {
-    name: "Analise-de-XML",
-    img: analiseXml,
-    description: "Exportação de dados de nota fiscal para PDF.",
-    link: "https://github.com/LUCASARIEL21/Analise-de-XML",
+    name: "IAR Office",
+    img: iaroffice,
+    description: "Site de apresentação da empresa IAR Office.",
+    link: "https://iaroffice.com.br/",
   },
   {
     name: "Onebitcode",
@@ -67,22 +67,32 @@ const projectsData = [
 ];
 
 const Projects = () => (
-  <section className="min-h-screen bg-gray-800 text-white p-6 flex flex-col justify-center items-center" id="projetos">
-    <h2 className="text-4xl font-semibold mb-6">Meus Projetos</h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {projectsData.map((project, index) => (
+  <section className="py-20 px-6 bg-slate-900/85 text-white" id="projetos">
+    <div className="mx-auto max-w-6xl">
+      <p className="uppercase tracking-[0.2em] text-xs text-amber-300 mb-2">Portfólio</p>
+      <h2 className="text-4xl md:text-5xl font-black mb-8">Meus Projetos</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projectsData.map((project) => (
         <a
-          key={index}
+          key={project.name}
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-900 p-4 rounded-xl shadow-lg hover:scale-105 transition-transform"
+          className="group bg-slate-950/70 border border-white/10 p-4 rounded-2xl shadow-lg hover:-translate-y-1 hover:border-amber-300/50 transition-all"
         >
-          <img src={project.img} alt={project.name} className="w-full h-40 object-cover rounded mb-4" />
-          <h3 className="text-xl font-bold mb-2">{project.name}</h3>
-          <p className="text-gray-300">{project.description}</p>
+          <img
+            src={project.img}
+            alt={project.name}
+            className="w-full h-44 object-cover rounded-xl mb-4"
+            loading="lazy"
+            decoding="async"
+          />
+          <h3 className="text-xl font-bold mb-2 text-amber-200 group-hover:text-amber-100">{project.name}</h3>
+          <p className="text-slate-300 leading-relaxed">{project.description}</p>
+          <span className="inline-block mt-4 text-sm text-slate-200 group-hover:text-amber-200">Acessar projeto →</span>
         </a>
-      ))}
+        ))}
+      </div>
     </div>
   </section>
 );

@@ -2,3 +2,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--bg-main: #080d14;
+	--bg-panel: #0f1722;
+	--bg-panel-soft: #162032;
+	--text-main: #e5ecf4;
+	--text-soft: #9fb0c4;
+	--brand: #f6c453;
+	--brand-strong: #f1b533;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 88px;
+}
+
+body {
+	margin: 0;
+	font-family: "Segoe UI", "Poppins", sans-serif;
+	background:
+		radial-gradient(circle at 10% 10%, rgba(246, 196, 83, 0.12), transparent 35%),
+		radial-gradient(circle at 80% 0%, rgba(72, 124, 255, 0.12), transparent 40%),
+		var(--bg-main);
+	color: var(--text-main);
+}
